@@ -15,6 +15,12 @@ body {
     margin: 0;
 }
 
+h1 {
+    padding: 2rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
 .circle-wrapper {
     display: flex;
     flex-direction: column;
@@ -40,15 +46,15 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100vw;
+    width: 90vw;
     margin: 0 auto;
     font-size: 1.5rem;
-
+    border-radius: 2rem;
 
     @media only screen and (min-width: 750px) {
-        width: 50%;
+        width: 45%;
         margin-left: 0;
-        border-radius: 2rem;
+        max-width: 600px;
         box-shadow: 3px 5px 5px rgba(128, 128, 128, 0.579);
     }
 }
@@ -102,11 +108,17 @@ body {
     justify-content: center;
     align-items: center;
     margin: auto;
-    height: 40vh;
-    width: 40vh;
+    height: 30vh;
+    width: 30vh;
     background-color: var(--pieBack);
     border-radius: 50%;
-    transition: all 0.5s ease-in-out
+
+    transition: all 0.5s ease-in-out;
+
+    @media only screen and (min-width: 750px) {
+        height: 40vh;
+        width: 40vh;
+    }
 }
 
 .angle-label-wrapper {
